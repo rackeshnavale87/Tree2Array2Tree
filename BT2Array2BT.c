@@ -13,11 +13,10 @@ typedef struct node {
 BTNode *root, *n[6], *root2, *n2[6];
 
 /*
-We can store the void * objects in an array  eg can be stored 
-as obj[] & can pass this If the objects are of different 
-type we can manipulate it or maintain  structures at both end
-simplified it to objects of long as a basic problem to solve.
-We passing is array of pointers to struct having ptr to objs*/
+* We can store the void * objects in an array, eg It can be stored as obj[] & can pass it. If the objects are of different 
+* type we can either maintain  structures at both ends or need to write code accordingly where we can fetch the objects and
+* store in array before sending across. Below code is simplified to focus mainly on how to convert Tree to Array and back to Tree
+*/
 long obj[6] = {30,20,40,10,5,50};
 BTNode *Tarray[MAX_SIZE+1], *temp;
 
