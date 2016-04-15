@@ -1,0 +1,19 @@
+me@me-VirtualBox:~/Desktop/c$ gcc -g BT2Array2BT.c -lm -o run
+me@me-VirtualBox:~/Desktop/c$ ./run
+
+AT SOURCE
+----------------------
+Inorder traversal of BT with root: [30]
+NULL--[20]--NULL--[5]--NULL--[10]--NULL--[30]--NULL--[40]--NULL--[50]--NULL--
+
+BT converted to array: 
+----------------------
+[30], [20], [40], [NULL], [10], [NULL], [50], [NULL], [NULL], [5], [NULL], [NULL], [NULL], [NULL], [NULL], 
+
+AT DESTINATION
+----------------------
+Inorder traversal of BT with root: [30]
+NULL--[20]--NULL--[5]--NULL--[10]--NULL--[30]--NULL--[40]--NULL--[50]--NULL--
+
+me@me-VirtualBox:~/Desktop/c$
+
