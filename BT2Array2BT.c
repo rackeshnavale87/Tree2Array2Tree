@@ -16,7 +16,8 @@ BTNode *root, *n[6], *root2, *n2[6];
 We can store the void * objects in an array  eg can be stored 
 as obj[] & can pass this If the objects are of different 
 type we can manipulate it or maintain  structures at both end
-simplified it to objects of long as a basic problem to solve*/
+simplified it to objects of long as a basic problem to solve.
+We passing is array of pointers to struct having ptr to objs*/
 long obj[6] = {30,20,40,10,5,50};
 BTNode *Tarray[MAX_SIZE+1], *temp;
 
@@ -112,11 +113,11 @@ void BTtoArray (BTNode *rootTemp) {
         if(temp != NULL && temp->left!=NULL )
             Tarray[i++] = temp->left;
         else
-        	i++;								// maintains order, if we want only NOT-NULL continuousel, dont do i++
+        	i++;			// maintains order, if we want only NOT-NULL continuousel, dont do i++
         if(temp != NULL && temp->right!=NULL)
             Tarray[i++] = temp->right;
         else
-        	i++;								// maintains order, if we want only NOT-NULL continuousel, dont do i++
+        	i++;			// maintains order, if we want only NOT-NULL continuousel, dont do i++
         j++;
         temp = Tarray[j];
     }
