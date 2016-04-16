@@ -154,7 +154,7 @@ if Parent is at index : i of Tarrat
 	    	n2[j]->right = Tarray[i*2];
 	    }
 	}
-	root2 = n[0];
+	root2 = n2[0];
 }
 
 
